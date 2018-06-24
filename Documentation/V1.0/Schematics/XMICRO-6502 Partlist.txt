@@ -1,0 +1,82 @@
+Partlist
+
+Exported from XMICRO-6502.sch at 1/14/2018 2:18:29 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value              Device                Package      Library  Sheet
+
+C1       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C2       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C3       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C4       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C5       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C6       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C7       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C8       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C9       0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C10      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C11      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C12      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C13      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C14      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C15      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C16      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C17      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C18      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C19      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C20      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C21      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C22      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C23      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C24      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C25      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C26      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C27      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C28      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+C29      0.1uF              C-US025-024X044       C025-024X044 resistor 6
+D1       RED                LED5MM                LED5MM       led      6
+JP1      PINHD-1X2THRU      PINHD-1X2THRU         1X02         Custom   2
+JP2      PINHD-1X2THRU      PINHD-1X2THRU         1X02         Custom   2
+JP3      PINHD1X3THRU       PINHD1X3THRU          1X03         Custom   1
+JP4      PINHD1X3THRU       PINHD1X3THRU          1X03         Custom   1
+JP5      PINHD-1X2THRU      PINHD-1X2THRU         1X02         Custom   1
+PC0      XMICRO-BUS-EDGE62M XMICRO-BUS-EDGE62M    EDGE62M      Custom   6
+Q1       2N4403             TRANSISTOR-PNP-2N4403 TO92         Custom   6
+R1       270                R-US_0207/10          0207/10      resistor 6
+R2       22k                R-US_0207/10          0207/10      resistor 6
+R3       10k                R-US_0207/10          0207/10      resistor 2
+R4       10k                R-US_0207/10          0207/10      resistor 2
+R5       10k                R-US_0207/10          0207/10      resistor 1
+R6       470                R-US_0207/10          0207/10      resistor 1
+U1       74138              74LS138N              DIL16        74xx-us  5
+U2       74138              74LS138N              DIL16        74xx-us  5
+U3       7410               74LS10N               DIL14        74xx-us  1
+U4       7404               74LS04N               DIL14        74xx-us  2
+U5       74257              74LS257N              DIL16        74xx-us  2
+U6       74688              74LS688N              DIL20        74xx-us  2
+U7       74688              74LS688N              DIL20        74xx-us  2
+U8       74244              74LS244N              DIL20        74xx-us  1
+U9       7474               74LS74N               DIL14        74xx-us  4
+U10      7474               74LS74N               DIL14        74xx-us  2
+U11      74273              74273N                DIL20        74xx-us  2
+U12      74244              74LS244N              DIL20        74xx-us  2
+U13      74244              74LS244N              DIL20        74xx-us  5
+U14      74244              74LS244N              DIL20        74xx-us  3
+U15      74245              74LS245N              DIL20        74xx-us  1
+U16      74574              74HC574N              DIL20        74xx-us  3
+U17      7400               74LS00N               DIL14        74xx-us  1
+U18      7408               74LS08N               DIL14        74xx-us  1
+U19      7404               74LS04N               DIL14        74xx-us  1
+U20      W65C02S            W65C02P               DIL40        Custom   1
+U21      74244              74LS244N              DIL20        74xx-us  3
+U22      74138              74LS138N              DIL16        74xx-us  3
+U23      74148              74LS148N              DIL16        74xx-us  3
+U24      74244              74LS244N              DIL20        74xx-us  1
+U25      74244              74LS244N              DIL20        74xx-us  1
+U26      74273              74273N                DIL20        74xx-us  3
+U27      7432               74LS32N               DIL14        74xx-us  3
+U28      7432               74LS32N               DIL14        74xx-us  3
+Y1       4MHz               QG5460                DIL08S       crystal  1
