@@ -1,0 +1,836 @@
+Netlist
+
+Exported from XMICRO-6502 V2.1.sch at 3/24/2019 11:19:25 AM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+!BBUSACK PC0      20       !BUSACK    6
+         U8       7        Y2         1
+
+!BCBR    PC0      12       !CBR       6
+         U4       11       I          4
+
+!BCSX    PC0      9        !CSX       6
+         U1       4        G2A        5
+         U2       5        G2B        5
+
+!BFETCH  PC0      19       !FETCH     6
+         U8       14       Y3         1
+
+!BHALT   PC0      17       !HALT      6
+         U8       5        Y3         1
+
+!BINH    PC0      11       !INH       6
+         U17      11       O          3
+
+!BINT    PC0      51       !INT       6
+         U18      10       I1         1
+
+!BIOSEL  PC0      16       !IO        6
+         U25      18       Y1         1
+
+!BIRQ0   PC0      53       !IRQ0      6
+         U27      2        I1         3
+
+!BIRQ1   PC0      54       !IRQ1      6
+         U27      5        I1         3
+
+!BIRQ2   PC0      55       !IRQ2      6
+         U27      13       I1         3
+
+!BIRQ3   PC0      56       !IRQ3      6
+         U27      10       I1         3
+
+!BIRQ4   PC0      57       !IRQ4      6
+         U28      5        I1         3
+
+!BIRQ5   PC0      58       !IRQ5      6
+         U28      2        I1         3
+
+!BIRQ6   PC0      59       !IRQ6      6
+         U28      13       I1         3
+
+!BIRQ7   PC0      60       !IRQ7      6
+         U28      10       I1         3
+
+!BIRQX   PC0      52       !IRQX      6
+         U10      8        !Q         4
+
+!BNMI    JP5      1        1          1
+         PC0      61       !NMI       6
+
+!BRD     PC0      21       !RD        6
+         U1       5        G2B        5
+         U2       2        B          5
+         U8       18       Y1         1
+
+!BRST    PC0      14       !RST       6
+         U8       11       A1         1
+
+!BUSACK  U10      10       PRE        4
+         U8       13       A2         1
+         U9       10       PRE        4
+         U9       6        !Q         4
+
+!BWAIT   PC0      18       !WAIT      6
+         U3       4        I0         1
+
+!BWR     PC0      22       !WR        6
+         U2       3        C          5
+         U8       16       Y2         1
+
+!CINT    U18      8        O          1
+         U20      4        !IRQB      1
+
+!CS0_READ U12      1        G          2
+         U12      19       G          2
+         U2       11       Y4         5
+
+!CS0_WRITE U10      3        CLK        2
+         U11      11       CLK        2
+         U2       13       Y2         5
+
+!CS1_READ U2       10       Y5         5
+         U21      1        G          3
+         U21      19       G          3
+
+!CS1_WRITE U2       12       Y3         5
+         U26      11       CLK        3
+
+!HALT    R2       1        1          6
+         U17      8        O          1
+         U8       15       A3         1
+
+!IOSEL   U25      2        A1         1
+         U6       19       P=Q        5
+
+!IVP     U16      1        OC         3
+         U18      4        I0         4
+         U22      9        Y6         3
+
+!MLB     U18      2        I1         4
+         U20      5        !MLB       1
+
+!RD      U17      3        O          1
+         U22      5        G2B        3
+         U8       2        A1         1
+
+!RST     U10      4        PRE        2
+         U11      1        CLR        2
+         U18      5        I1         4
+         U20      40       !RESB      1
+         U26      1        CLR        3
+         U8       9        Y1         1
+         U9       1        CLR        4
+         U9       13       CLR        4
+
+!VINT    U18      9        I0         1
+         U23      14       GS         3
+
+!VPB     JP3      2        2          2
+         U19      5        I          3
+         U20      1        !VPB       1
+         U22      4        G2A        3
+
+!WAIT_DMA U3       5        I1         1
+         U9       8        !Q         4
+
+!WR      U17      6        O          1
+         U8       4        A2         1
+
+A0       U20      9        A0         1
+         U22      1        A          3
+         U24      17       A4         1
+
+A1       U18      12       I0         3
+         U20      10       A1         1
+         U22      2        B          3
+         U24      2        A1         1
+
+A2       U18      13       I1         3
+         U20      11       A2         1
+         U22      3        C          3
+         U24      15       A3         1
+
+A3       U20      12       A3         1
+         U24      4        A2         1
+
+A4       U20      13       A4         1
+         U24      13       A2         1
+
+A5       U20      14       A5         1
+         U24      6        A3         1
+
+A6       U20      15       A6         1
+         U24      11       A1         1
+
+A7       U20      16       A7         1
+         U24      8        A4         1
+
+A8       U20      17       A8         1
+         U25      6        A3         1
+
+A9       U20      18       A9         1
+         U25      13       A2         1
+         U7       4        P1         2
+
+A10      U20      19       A10        1
+         U25      8        A4         1
+         U7       6        P2         2
+
+A11      U20      20       A11        1
+         U25      11       A1         1
+         U7       8        P3         2
+
+A12      U20      22       A12        1
+         U25      15       A3         1
+         U6       11       P4         5
+         U7       11       P4         2
+
+A13      U20      23       A13        1
+         U25      4        A2         1
+         U6       13       P5         5
+         U7       13       P5         2
+
+A14      U20      24       A14        1
+         U25      17       A4         1
+         U6       15       P6         5
+         U7       15       P6         2
+
+A15      U20      25       A15        1
+         U29      3        1B         2
+         U4       9        I          2
+         U6       17       P7         5
+         U7       17       P7         2
+
+BA0      PC0      23       A0         6
+         U1       1        A          5
+         U2       1        A          5
+         U24      3        Y4         1
+
+BA1      PC0      24       A1         6
+         U24      18       Y1         1
+
+BA2      PC0      25       A2         6
+         U24      5        Y3         1
+
+BA3      PC0      26       A3         6
+         U24      16       Y2         1
+
+BA4      PC0      27       A4         6
+         U24      7        Y2         1
+
+BA5      PC0      28       A5         6
+         U1       2        B          5
+         U24      14       Y3         1
+
+BA6      PC0      29       A6         6
+         U1       3        C          5
+         U24      9        Y1         1
+
+BA7      PC0      30       A7         6
+         U1       6        G1         5
+         U2       4        G2A        5
+         U24      12       Y4         1
+
+BA8      PC0      31       A8         6
+         U25      14       Y3         1
+
+BA9      PC0      32       A9         6
+         U25      7        Y2         1
+
+BA10     PC0      33       A10        6
+         U25      12       Y4         1
+
+BA11     PC0      34       A11        6
+         U25      9        Y1         1
+
+BA12     PC0      35       A12        6
+         U25      5        Y3         1
+
+BA13     PC0      36       A13        6
+         U25      16       Y2         1
+
+BA14     PC0      37       A14        6
+         U25      3        Y4         1
+
+BA15     PC0      38       A15        6
+         U29      4        1Y         2
+
+BA16     PC0      39       A16        6
+         U5       4        1Y         2
+
+BA17     PC0      40       A17        6
+         U5       7        2Y         2
+
+BA18     PC0      41       A18        6
+         U5       9        3Y         2
+
+BA19     PC0      42       A19        6
+         U5       12       4Y         2
+
+BCLK     PC0      15       CLK        6
+         U8       3        Y4         1
+
+BD0      PC0      43       D0         6
+         U10      2        D          2
+         U12      3        Y4         2
+         U13      18       Y1         5
+         U14      3        Y4         3
+         U15      2        A1         1
+         U16      19       1Q         3
+         U21      18       Y1         3
+         U26      18       D8         3
+
+BD1      PC0      44       D1         6
+         U11      18       D8         2
+         U12      18       Y1         2
+         U13      3        Y4         5
+         U14      18       Y1         3
+         U15      3        A2         1
+         U16      18       2Q         3
+         U21      16       Y2         3
+         U26      17       D7         3
+
+BD2      PC0      45       D2         6
+         U11      17       D7         2
+         U12      5        Y3         2
+         U13      16       Y2         5
+         U14      5        Y3         3
+         U15      4        A3         1
+         U16      17       3Q         3
+         U21      14       Y3         3
+         U26      14       D6         3
+
+BD3      PC0      46       D3         6
+         U11      4        D2         2
+         U12      16       Y2         2
+         U13      5        Y3         5
+         U14      16       Y2         3
+         U15      5        A4         1
+         U16      16       4Q         3
+         U21      12       Y4         3
+         U26      13       D5         3
+
+BD4      PC0      47       D4         6
+         U11      7        D3         2
+         U12      7        Y2         2
+         U13      14       Y3         5
+         U14      7        Y2         3
+         U15      6        A5         1
+         U16      15       5Q         3
+         U21      9        Y1         3
+         U26      8        D4         3
+
+BD5      PC0      48       D5         6
+         U11      14       D6         2
+         U12      14       Y3         2
+         U13      7        Y2         5
+         U14      14       Y3         3
+         U15      7        A6         1
+         U16      14       6Q         3
+         U21      7        Y2         3
+         U26      7        D3         3
+
+BD6      PC0      49       D6         6
+         U11      13       D5         2
+         U12      9        Y1         2
+         U13      12       Y4         5
+         U14      9        Y1         3
+         U15      8        A7         1
+         U16      13       7Q         3
+         U21      5        Y3         3
+         U26      4        D2         3
+
+BD7      PC0      50       D7         6
+         U11      8        D4         2
+         U12      12       Y4         2
+         U13      9        Y1         5
+         U14      12       Y4         3
+         U15      9        A8         1
+         U16      12       8Q         3
+         U21      3        Y4         3
+         U26      3        D1         3
+
+CPUINH   U15      19       G          1
+         U24      1        G          1
+         U24      19       G          1
+         U25      1        G          1
+         U25      19       G          1
+         U29      15       G          2
+         U5       15       G          2
+         U8       1        G          1
+         U9       5        Q          4
+
+GND      C1       2        2          6
+         C10      2        2          6
+         C11      2        2          6
+         C12      2        2          6
+         C13      2        2          6
+         C14      2        2          6
+         C15      2        2          6
+         C16      2        2          6
+         C17      2        2          6
+         C18      2        2          6
+         C19      2        2          6
+         C2       2        2          6
+         C20      2        2          6
+         C21      2        2          6
+         C22      2        2          6
+         C23      2        2          6
+         C24      2        2          6
+         C25      2        2          6
+         C26      2        2          6
+         C27      2        2          6
+         C28      2        2          6
+         C29      2        2          6
+         C3       2        2          6
+         C30      2        2          6
+         C31      2        2          6
+         C4       2        2          6
+         C5       2        2          6
+         C6       2        2          6
+         C7       2        2          6
+         C8       2        2          6
+         C9       2        2          6
+         D1       K        C          6
+         PC0      3        GND        6
+         PC0      4        GND        6
+         PC0      62       GND        6
+         R3       2        2          2
+         R4       2        2          5
+         U1       8        GND        * none *
+         U10      7        GND        * none *
+         U11      10       GND        * none *
+         U12      10       GND        * none *
+         U13      10       GND        * none *
+         U14      10       GND        * none *
+         U14      11       A1         3
+         U14      13       A2         3
+         U14      15       A3         3
+         U14      17       A4         3
+         U14      4        A2         3
+         U14      6        A3         3
+         U14      8        A4         3
+         U15      10       GND        * none *
+         U16      10       GND        * none *
+         U16      2        1D         3
+         U16      3        2D         3
+         U16      8        7D         3
+         U16      9        8D         3
+         U17      7        GND        * none *
+         U18      7        GND        * none *
+         U19      7        GND        * none *
+         U2       8        GND        * none *
+         U20      21       GND        * none *
+         U21      10       GND        * none *
+         U22      8        GND        * none *
+         U23      5        EI         3
+         U23      8        GND        * none *
+         U24      10       GND        * none *
+         U25      10       GND        * none *
+         U26      10       GND        * none *
+         U27      7        GND        * none *
+         U28      7        GND        * none *
+         U29      8        GND        * none *
+         U3       7        GND        * none *
+         U30      7        GND        * none *
+         U4       7        GND        * none *
+         U5       10       3B         2
+         U5       13       4B         2
+         U5       3        1B         2
+         U5       6        2B         2
+         U5       8        GND        * none *
+         U6       10       GND        * none *
+         U6       18       Q7         5
+         U7       10       GND        * none *
+         U7       12       Q4         2
+         U7       14       Q5         2
+         U7       16       Q6         2
+         U7       18       Q7         2
+         U7       5        Q1         2
+         U7       7        Q2         2
+         U7       9        Q3         2
+         U8       10       GND        * none *
+         U8       19       G          1
+         U9       12       D          4
+         U9       7        GND        * none *
+         Y1       4        GND        1
+
+ID0      U13      2        A1         5
+
+ID1      U13      17       A4         5
+
+ID2      U13      4        A2         5
+
+ID3      U13      15       A3         5
+
+ID4      U13      6        A3         5
+
+ID5      U13      13       A2         5
+
+ID6      U13      8        A4         5
+
+ID7      U13      11       A1         5
+
+N$1      U19      1        I          1
+         U3       6        O          1
+
+N$2      U17      5        I1         1
+         U19      4        O          1
+
+N$3      JP1      1        1          1
+         U3       1        I0         1
+         U30      12       D          1
+         U30      5        Q          1
+
+N$4      U15      1        DIR        1
+         U17      1        I0         1
+         U19      3        I          1
+         U20      34       R!WB       1
+
+N$6      U16      4        3D         3
+         U23      9        A0         3
+
+N$7      U16      5        4D         3
+         U23      7        A1         3
+
+N$8      JP2      2        2          1
+         U3       2        I1         1
+
+N$9      R5       1        1          1
+         Y1       1        OE         1
+
+N$10     JP4      2        2          5
+         R4       1        1          5
+         U6       1        G          5
+
+N$11     U17      10       I1         1
+         U19      12       O          1
+
+N$12     U18      3        O          4
+         U9       2        D          4
+
+N$13     U19      11       I          3
+         U23      15       EO         3
+
+N$14     U17      13       I1         3
+         U19      6        O          3
+
+N$15     U14      1        G          3
+         U14      19       G          3
+         U22      7        Y7         3
+
+N$16     U10      13       CLR        4
+         U18      6        O          4
+
+N$17     U18      1        I0         4
+         U4       10       O          4
+
+N$18     U16      6        5D         3
+         U23      6        A2         3
+
+N$19     U11      19       Q8         2
+         U12      2        A1         2
+         U5       2        1A         2
+
+N$20     Q1       2        B          6
+         R2       2        2          6
+
+N$21     R7       2        2          1
+         U17      9        I0         1
+         U19      2        O          1
+
+N$22     U17      12       I0         3
+         U18      11       O          3
+
+N$23     U4       12       O          4
+         U4       3        I          4
+
+N$24     Q1       3        C          6
+         R1       2        2          6
+
+N$25     U4       4        O          4
+         U9       3        CLK        4
+
+N$26     D1       A        A          6
+         R1       1        1          6
+
+N$27     U11      5        Q2         2
+         U12      4        A2         2
+         U5       11       3A         2
+
+N$28     U15      11       B8         1
+         U20      26       D7         1
+
+N$29     U15      12       B7         1
+         U20      27       D6         1
+
+N$30     U15      13       B6         1
+         U20      28       D5         1
+
+N$31     U15      14       B5         1
+         U20      29       D4         1
+
+N$32     U15      15       B4         1
+         U20      30       D3         1
+
+N$33     U15      16       B3         1
+         U20      31       D2         1
+
+N$34     U15      17       B2         1
+         U20      32       D1         1
+
+N$35     U15      18       B1         1
+         U20      33       D0         1
+
+N$36     JP2      3        3          1
+         U30      9        Q          1
+
+N$37     JP5      2        2          1
+         R6       1        1          1
+         U20      6        !NMIB      1
+
+N$38     U11      16       Q7         2
+         U12      15       A3         2
+         U5       5        2A         2
+
+N$39     U11      6        Q3         2
+         U12      13       A2         2
+         U5       14       4A         2
+
+N$40     U3       12       I0         2
+         U4       8        O          2
+
+N$41     U3       13       I1         2
+         U7       19       P=Q        2
+
+N$42     U10      5        Q          2
+         U12      17       A4         2
+         U29      2        1A         2
+
+N$43     U3       10       I1         2
+         U3       11       O          2
+
+N$44     JP3      1        1          2
+         R3       1        1          2
+         U3       9        I0         2
+
+N$45     U11      15       Q6         2
+         U12      6        A3         2
+
+N$46     U3       3        O          1
+         U30      2        D          1
+
+N$47     JP1      3        3          1
+         U30      11       CLK        1
+         U30      3        CLK        1
+         Y1       5        FO         1
+
+N$48     U29      1        !A!/B      2
+         U3       8        O          2
+         U5       1        !A!/B      2
+
+N$49     U19      9        I          1
+         U20      7        SYNC       1
+
+N$50     U1       7        Y7         5
+         U13      1        G          5
+         U13      19       G          5
+
+N$51     U19      8        O          1
+         U8       6        A3         1
+
+N$52     U23      10       0          3
+         U28      8        O          3
+
+N$55     U16      7        6D         3
+         U19      10       O          3
+
+N$56     U11      12       Q5         2
+         U12      11       A1         2
+
+N$57     U11      9        Q4         2
+         U12      8        A4         2
+         U4       1        I          2
+
+N$61     U4       2        O          2
+         U7       1        G          2
+
+N$92     U23      11       1          3
+         U28      11       O          3
+
+N$93     U23      12       2          3
+         U28      3        O          3
+
+N$94     U23      13       3          3
+         U28      6        O          3
+
+N$95     U23      1        4          3
+         U27      8        O          3
+
+N$96     U23      2        5          3
+         U27      11       O          3
+
+N$97     U23      3        6          3
+         U27      6        O          3
+
+N$98     U23      4        7          3
+         U27      3        O          3
+
+N$99     U21      17       A4         3
+         U26      2        Q1         3
+         U28      9        I0         3
+
+N$100    U21      15       A3         3
+         U26      5        Q2         3
+         U28      12       I0         3
+
+N$101    U21      13       A2         3
+         U26      6        Q3         3
+         U28      1        I0         3
+
+N$102    U21      11       A1         3
+         U26      9        Q4         3
+         U28      4        I0         3
+
+N$103    U21      8        A4         3
+         U26      12       Q5         3
+         U27      9        I0         3
+
+N$104    U21      6        A3         3
+         U26      15       Q6         3
+         U27      12       I0         3
+
+N$105    U21      4        A2         3
+         U26      16       Q7         3
+         U27      4        I0         3
+
+N$106    U21      2        A1         3
+         U26      19       Q8         3
+         U27      1        I0         3
+
+PH0      JP1      2        2          1
+         U17      2        I1         1
+         U17      4        I0         1
+         U20      37       PHI2       1
+         U8       17       A4         1
+
+PH1      U16      11       CLK        3
+         U20      3        PHI1O      1
+         U9       11       CLK        4
+
+PH2      U20      39       PHI2O      1
+         U4       13       I          4
+
+RDY      R7       1        1          1
+         U19      13       I          1
+         U20      2        RDY        1
+
+VCC      C1       1        1          6
+         C10      1        1          6
+         C11      1        1          6
+         C12      1        1          6
+         C13      1        1          6
+         C14      1        1          6
+         C15      1        1          6
+         C16      1        1          6
+         C17      1        1          6
+         C18      1        1          6
+         C19      1        1          6
+         C2       1        1          6
+         C20      1        1          6
+         C21      1        1          6
+         C22      1        1          6
+         C23      1        1          6
+         C24      1        1          6
+         C25      1        1          6
+         C26      1        1          6
+         C27      1        1          6
+         C28      1        1          6
+         C29      1        1          6
+         C3       1        1          6
+         C30      1        1          6
+         C31      1        1          6
+         C4       1        1          6
+         C5       1        1          6
+         C6       1        1          6
+         C7       1        1          6
+         C8       1        1          6
+         C9       1        1          6
+         JP2      1        1          1
+         JP4      1        1          5
+         PC0      5        +5V        6
+         PC0      6        +5V        6
+         Q1       1        E          6
+         R5       2        2          1
+         R6       2        2          1
+         U1       16       VCC        * none *
+         U10      1        CLR        2
+         U10      11       CLK        4
+         U10      12       D          4
+         U10      14       VCC        * none *
+         U11      20       VCC        * none *
+         U11      3        D1         2
+         U12      20       VCC        * none *
+         U13      20       VCC        * none *
+         U14      2        A1         3
+         U14      20       VCC        * none *
+         U15      20       VCC        * none *
+         U16      20       VCC        * none *
+         U17      14       VCC        * none *
+         U18      14       VCC        * none *
+         U19      14       VCC        * none *
+         U2       16       VCC        * none *
+         U2       6        G1         5
+         U20      36       BE         1
+         U20      38       !SOB       1
+         U20      8        VCC        * none *
+         U21      20       VCC        * none *
+         U22      16       VCC        * none *
+         U22      6        G1         3
+         U23      16       VCC        * none *
+         U24      20       VCC        * none *
+         U25      20       VCC        * none *
+         U26      20       VCC        * none *
+         U27      14       VCC        * none *
+         U28      14       VCC        * none *
+         U29      10       3B         2
+         U29      11       3A         2
+         U29      13       4B         2
+         U29      14       4A         2
+         U29      16       VCC        * none *
+         U29      5        2A         2
+         U29      6        2B         2
+         U3       14       VCC        * none *
+         U30      1        CLR        1
+         U30      10       PRE        1
+         U30      13       CLR        1
+         U30      14       VCC        * none *
+         U30      4        PRE        1
+         U4       14       VCC        * none *
+         U4       5        I          6
+         U5       16       VCC        * none *
+         U6       12       Q4         5
+         U6       14       Q5         5
+         U6       16       Q6         5
+         U6       2        P0         5
+         U6       20       VCC        * none *
+         U6       3        Q0         5
+         U6       4        P1         5
+         U6       5        Q1         5
+         U6       6        P2         5
+         U6       7        Q2         5
+         U6       8        P3         5
+         U6       9        Q3         5
+         U7       2        P0         2
+         U7       20       VCC        * none *
+         U7       3        Q0         2
+         U8       20       VCC        * none *
+         U8       8        A4         1
+         U9       14       VCC        * none *
+         U9       4        PRE        4
+         Y1       8        VCC        1
+
