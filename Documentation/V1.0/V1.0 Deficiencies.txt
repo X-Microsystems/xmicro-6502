@@ -1,5 +1,0 @@
-XMICRO-6502
-	Bank switcher's wait state generator (U10A) drops the CPU into an infinite wait state if JP2 is shorted.
-		Trigger for the wait state is only active when !WR is asserted, and the wait state keeps the CPU on the trigger address. So it clears and re-triggers every cycle.
-		Doesn't seem to be necessary, at least when the switch is made from the safe page. Would be nice if it worked though.
-	Persistent memory comparator in bank switcher should be widened to $3FFF. Preferably by jumper.
