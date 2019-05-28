@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10118,8 +10118,8 @@ control logic</text>
 <net name="!BBUSACK" class="0">
 <segment>
 <wire x1="106.68" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
-<label x="88.9" y="106.68" size="1.016" layer="95" rot="MR0" xref="yes"/>
 <pinref part="U8" gate="B" pin="Y2"/>
+<label x="76.708" y="106.68" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -10132,8 +10132,8 @@ control logic</text>
 <net name="PH1" class="0">
 <segment>
 <wire x1="233.68" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
-<label x="254" y="162.56" size="1.016" layer="95" xref="yes"/>
 <pinref part="U20" gate="G$1" pin="PHI1O"/>
+<label x="262.128" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BUSACK" class="0">
@@ -10145,9 +10145,9 @@ control logic</text>
 </net>
 <net name="BCLK" class="0">
 <segment>
-<label x="88.9" y="101.6" size="1.016" layer="95" rot="MR0" xref="yes"/>
 <pinref part="U8" gate="B" pin="Y4"/>
 <wire x1="88.9" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
+<label x="79.756" y="101.6" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!BRD" class="0">
@@ -10169,8 +10169,8 @@ control logic</text>
 <net name="!BFETCH" class="0">
 <segment>
 <wire x1="106.68" y1="134.62" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
-<label x="88.9" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U8" gate="A" pin="Y3"/>
+<label x="77.724" y="134.62" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!BWAIT" class="0">
@@ -10189,7 +10189,7 @@ control logic</text>
 <wire x1="246.38" y1="139.7" x2="246.38" y2="127" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
 <junction x="246.38" y="139.7"/>
-<label x="223.52" y="127" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="216.154" y="127" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!WR" class="0">
@@ -10201,7 +10201,7 @@ control logic</text>
 <wire x1="248.92" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <junction x="248.92" y="124.46"/>
-<label x="223.52" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="219.202" y="124.46" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -10250,13 +10250,13 @@ control logic</text>
 </segment>
 <segment>
 <wire x1="187.96" y1="30.48" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
-<label x="203.2" y="30.48" size="1.016" layer="95" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="U19" gate="F" pin="I"/>
 <wire x1="190.5" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="20.32" x2="190.5" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="20.32" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
 <junction x="190.5" y="30.48"/>
+<label x="208.026" y="30.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -10412,15 +10412,15 @@ control logic</text>
 <net name="PH2" class="0">
 <segment>
 <wire x1="233.68" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
-<label x="254" y="160.02" size="1.016" layer="95" xref="yes"/>
 <pinref part="U20" gate="G$1" pin="PHI2O"/>
+<label x="262.128" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!HALT" class="0">
 <segment>
 <wire x1="241.3" y1="17.78" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U17" gate="C" pin="O"/>
-<label x="256.54" y="17.78" size="1.016" layer="95" xref="yes"/>
+<label x="265.43" y="17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="B" pin="A3"/>
@@ -10455,7 +10455,7 @@ control logic</text>
 <segment>
 <pinref part="U20" gate="G$1" pin="!VPB"/>
 <wire x1="233.68" y1="175.26" x2="254" y2="175.26" width="0.1524" layer="91"/>
-<label x="254" y="175.26" size="1.016" layer="95" xref="yes"/>
+<label x="262.128" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!RST" class="0">
@@ -10467,16 +10467,16 @@ control logic</text>
 <wire x1="236.22" y1="167.64" x2="233.68" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
 <junction x="104.14" y="109.22"/>
-<label x="88.9" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U20" gate="G$1" pin="!RESB"/>
 <pinref part="U8" gate="B" pin="Y1"/>
+<label x="80.772" y="109.22" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!MLB" class="0">
 <segment>
 <pinref part="U20" gate="G$1" pin="!MLB"/>
 <wire x1="233.68" y1="180.34" x2="254" y2="180.34" width="0.1524" layer="91"/>
-<label x="254" y="180.34" size="1.016" layer="95" xref="yes"/>
+<label x="262.128" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!WAIT_DMA" class="0">
@@ -10526,7 +10526,7 @@ control logic</text>
 <segment>
 <pinref part="U8" gate="B" pin="Y3"/>
 <wire x1="106.68" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
-<label x="88.9" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="78.994" y="104.14" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -10563,7 +10563,7 @@ control logic</text>
 <wire x1="106.68" y1="180.34" x2="104.14" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="180.34" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="182.88" x2="81.28" y2="182.88" width="0.1524" layer="91"/>
-<label x="81.28" y="182.88" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="70.866" y="182.88" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11977,9 +11977,9 @@ Individual IRQ lines can be masked with $X01</text>
 </net>
 <net name="!VINT" class="0">
 <segment>
-<label x="254" y="154.94" size="1.016" layer="95" xref="yes"/>
 <pinref part="U23" gate="A" pin="GS"/>
 <wire x1="241.3" y1="154.94" x2="254" y2="154.94" width="0.1524" layer="91"/>
+<label x="262.382" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!VPB" class="0">
@@ -12003,7 +12003,7 @@ Individual IRQ lines can be masked with $X01</text>
 <wire x1="294.64" y1="104.14" x2="302.26" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="104.14" x2="312.42" y2="104.14" width="0.1524" layer="91"/>
 <junction x="302.26" y="104.14"/>
-<label x="312.42" y="104.14" size="1.016" layer="95" xref="yes"/>
+<label x="320.04" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -12030,8 +12030,8 @@ Individual IRQ lines can be masked with $X01</text>
 <net name="!BINH" class="0">
 <segment>
 <wire x1="297.18" y1="58.42" x2="307.34" y2="58.42" width="0.1524" layer="91"/>
-<label x="307.34" y="58.42" size="1.016" layer="95" xref="yes"/>
 <pinref part="U17" gate="D" pin="O"/>
+<label x="315.976" y="58.42" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -12208,7 +12208,7 @@ An interrupt is triggered for each request.</text>
 <wire x1="177.8" y1="147.32" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
 <junction x="177.8" y="147.32"/>
 <wire x1="177.8" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
-<label x="215.9" y="154.94" size="1.016" layer="95" xref="yes"/>
+<label x="227.076" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U10" gate="B" pin="PRE"/>
@@ -12220,7 +12220,7 @@ An interrupt is triggered for each request.</text>
 <segment>
 <pinref part="U10" gate="B" pin="!Q"/>
 <wire x1="160.02" y1="71.12" x2="175.26" y2="71.12" width="0.1524" layer="91"/>
-<label x="175.26" y="71.12" size="1.016" layer="95" xref="yes"/>
+<label x="185.166" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PH2" class="0">
@@ -12292,7 +12292,7 @@ An interrupt is triggered for each request.</text>
 <segment>
 <pinref part="U9" gate="B" pin="!Q"/>
 <wire x1="205.74" y1="137.16" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
-<label x="215.9" y="137.16" size="1.016" layer="95" xref="yes"/>
+<label x="228.6" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CPUINH" class="0">
@@ -12301,7 +12301,7 @@ An interrupt is triggered for each request.</text>
 <wire x1="147.32" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="147.32" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="157.48" x2="215.9" y2="157.48" width="0.1524" layer="91"/>
-<label x="215.9" y="157.48" size="1.016" layer="95" xref="yes"/>
+<label x="226.568" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -12619,28 +12619,28 @@ IO Comparator generates I/O Select signal.</text>
 <segment>
 <pinref part="U2" gate="A" pin="Y2"/>
 <wire x1="96.52" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-<label x="104.14" y="144.78" size="1.016" layer="95" xref="yes"/>
+<label x="117.856" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS1_WRITE" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="Y3"/>
 <wire x1="96.52" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
-<label x="104.14" y="142.24" size="1.016" layer="95" xref="yes"/>
+<label x="117.856" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS0_READ" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="Y4"/>
 <wire x1="96.52" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
-<label x="104.14" y="139.7" size="1.016" layer="95" xref="yes"/>
+<label x="117.094" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS1_READ" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="Y5"/>
 <wire x1="96.52" y1="137.16" x2="104.14" y2="137.16" width="0.1524" layer="91"/>
-<label x="104.14" y="137.16" size="1.016" layer="95" xref="yes"/>
+<label x="117.094" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -12770,7 +12770,7 @@ IO Comparator generates I/O Select signal.</text>
 <segment>
 <pinref part="U6" gate="A" pin="P=Q"/>
 <wire x1="231.14" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
-<label x="241.3" y="139.7" size="1.016" layer="95" xref="yes"/>
+<label x="250.698" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -13301,23 +13301,23 @@ IO Comparator generates I/O Select signal.</text>
 </net>
 <net name="!BNMI" class="0">
 <segment>
-<label x="124.46" y="114.3" size="1.016" layer="95" xref="yes"/>
 <wire x1="111.76" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="PC0" gate="G$1" pin="!NMI@61"/>
+<label x="133.35" y="114.3" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BRST" class="0">
 <segment>
-<label x="48.26" y="81.28" size="1.016" layer="95" rot="MR0" xref="yes"/>
 <wire x1="60.96" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="PC0" gate="G$1" pin="!RST@14"/>
+<label x="39.116" y="81.28" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!BCBR" class="0">
 <segment>
-<label x="124.46" y="109.22" size="1.016" layer="95" xref="yes"/>
 <wire x1="111.76" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="PC0" gate="G$1" pin="!CBR@12"/>
+<label x="133.604" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BBUSACK" class="0">
@@ -13330,57 +13330,57 @@ IO Comparator generates I/O Select signal.</text>
 <net name="!BIRQ0" class="0">
 <segment>
 <wire x1="111.76" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
-<label x="124.46" y="101.6" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ0@53"/>
+<label x="134.112" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ1" class="0">
 <segment>
 <wire x1="111.76" y1="99.06" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
-<label x="124.46" y="99.06" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ1@54"/>
+<label x="134.112" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ2" class="0">
 <segment>
 <wire x1="111.76" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
-<label x="124.46" y="96.52" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ2@55"/>
+<label x="134.112" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ3" class="0">
 <segment>
 <wire x1="111.76" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
-<label x="124.46" y="93.98" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ3@56"/>
+<label x="134.112" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ4" class="0">
 <segment>
 <wire x1="111.76" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
-<label x="124.46" y="91.44" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ4@57"/>
+<label x="134.112" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ5" class="0">
 <segment>
 <wire x1="111.76" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
-<label x="124.46" y="88.9" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ5@58"/>
+<label x="134.112" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ6" class="0">
 <segment>
 <wire x1="111.76" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<label x="124.46" y="86.36" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ6@59"/>
+<label x="134.112" y="86.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQ7" class="0">
 <segment>
 <wire x1="111.76" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
-<label x="124.46" y="83.82" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!IRQ7@60"/>
+<label x="134.112" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BCSX" class="0">
@@ -13423,23 +13423,23 @@ IO Comparator generates I/O Select signal.</text>
 </net>
 <net name="!BWAIT" class="0">
 <segment>
-<label x="48.26" y="78.74" size="1.016" layer="95" rot="MR0" xref="yes"/>
 <wire x1="60.96" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="PC0" gate="G$1" pin="!WAIT@18"/>
+<label x="38.608" y="78.74" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!BIRQX" class="0">
 <segment>
-<label x="124.46" y="116.84" size="1.016" layer="95" xref="yes"/>
 <wire x1="111.76" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="PC0" gate="G$1" pin="!IRQX@52"/>
+<label x="134.366" y="116.84" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BINT" class="0">
 <segment>
 <wire x1="111.76" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
-<label x="124.46" y="104.14" size="1.016" layer="95" xref="yes"/>
 <pinref part="PC0" gate="G$1" pin="!INT@51"/>
+<label x="133.096" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BA0" class="0">
