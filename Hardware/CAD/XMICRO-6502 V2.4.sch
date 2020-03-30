@@ -9547,7 +9547,7 @@ Source: www.kingbright.com</description>
 <part name="U23" library="74xx-us" deviceset="74*148" device="N" technology="LS" value="74148"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="U17" library="74xx-us" deviceset="74*00" device="N" technology="LS" value="7400"/>
-<part name="Y1" library="Custom" deviceset="OSC-OE" device="" value="4MHz"/>
+<part name="Y1" library="Custom" deviceset="OSC-OE" device="" value="12MHz"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C20" library="resistor" deviceset="C-US" device="025-024X044" value="0.1uF"/>
@@ -9677,7 +9677,7 @@ Source: www.kingbright.com</description>
 <wire x1="402.59" y1="8.89" x2="377.19" y2="8.89" width="0" layer="94"/>
 <text x="306.07" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
 <text x="306.07" y="30.48" size="2.54" layer="94" font="vector">CPU</text>
-<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="379.73" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="379.73" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="392.43" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
@@ -10805,7 +10805,7 @@ CPU address and the bank register.</text>
 <wire x1="377.19" y1="13.97" x2="402.59" y2="13.97" width="0" layer="94"/>
 <wire x1="402.59" y1="8.89" x2="377.19" y2="8.89" width="0" layer="94"/>
 <text x="306.07" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
-<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="379.73" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="379.73" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="392.43" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
@@ -10849,7 +10849,7 @@ CPU address and the bank register.</text>
 <instance part="JP3" gate="G$1" x="228.6" y="208.28" rot="R180"/>
 <instance part="GND16" gate="1" x="236.22" y="167.64" smashed="yes"/>
 <instance part="U10" gate="A" x="116.84" y="76.2"/>
-<instance part="P+5" gate="VCC" x="101.6" y="86.36" smashed="yes"/>
+<instance part="P+5" gate="VCC" x="96.52" y="76.2" smashed="yes"/>
 <instance part="P+17" gate="VCC" x="101.6" y="124.46" smashed="yes"/>
 </instances>
 <busses>
@@ -11102,8 +11102,8 @@ CPU address and the bank register.</text>
 <segment>
 <pinref part="U10" gate="A" pin="CLR"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="104.14" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="71.12" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U11" gate="A" pin="D1"/>
@@ -11207,14 +11207,14 @@ CPU address and the bank register.</text>
 </net>
 <net name="!RST" class="0">
 <segment>
-<wire x1="104.14" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <label x="76.2" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U11" gate="A" pin="CLR"/>
-<wire x1="104.14" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="81.28" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
-<label x="76.2" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="101.6" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U10" gate="A" pin="PRE"/>
+<wire x1="101.6" y1="81.28" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<junction x="101.6" y="93.98"/>
 </segment>
 </net>
 <net name="CPUINH" class="0">
@@ -11233,11 +11233,13 @@ CPU address and the bank register.</text>
 <net name="!CS0_WRITE" class="0">
 <segment>
 <pinref part="U11" gate="A" pin="CLK"/>
-<wire x1="76.2" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
 <label x="76.2" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
-<wire x1="76.2" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-<label x="76.2" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="99.06" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U10" gate="A" pin="CLK"/>
+<wire x1="99.06" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="73.66" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<junction x="99.06" y="96.52"/>
 </segment>
 </net>
 <net name="!CS0_READ" class="0">
@@ -11458,7 +11460,7 @@ Individual IRQ lines can be masked with $X01</text>
 <wire x1="377.19" y1="13.97" x2="402.59" y2="13.97" width="0" layer="94"/>
 <wire x1="402.59" y1="8.89" x2="377.19" y2="8.89" width="0" layer="94"/>
 <text x="306.07" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
-<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="306.07" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="379.73" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="379.73" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="392.43" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
@@ -12137,9 +12139,6 @@ Individual IRQ lines can be masked with $X01</text>
 <wire x1="302.26" y1="154.94" x2="337.82" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U22" gate="A" pin="Y6"/>
 <wire x1="294.64" y1="104.14" x2="302.26" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="104.14" x2="312.42" y2="104.14" width="0.1524" layer="91"/>
-<junction x="302.26" y="104.14"/>
-<label x="320.04" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -12233,14 +12232,14 @@ Individual IRQ lines can be masked with $X01</text>
 <sheet>
 <description>DMA System</description>
 <plain>
-<text x="78.74" y="91.44" size="1.4224" layer="97" rot="MR180">Interrupt is triggered upon !BUSACK!.
-Interrupt is cleared on reset or on the interrupt vector pull.</text>
+<text x="76.2" y="93.98" size="1.4224" layer="97" rot="MR180">Interrupt is triggered upon !BUSACK!.
+Interrupt is cleared on reset or $X01 read (Interrupt Mask Register)</text>
 <frame x1="0" y1="0" x2="266.7" y2="203.2" columns="6" rows="5" layer="94"/>
 <text x="166.37" y="30.48" size="2.54" layer="94" font="vector">DMA System</text>
 <text x="166.37" y="25.4" size="2.1844" layer="94" font="vector" rot="MR180">Stops CPU operation on request and releases the
 bus when safe, then acknowledges the request.
 An interrupt is triggered for each request.</text>
-<text x="78.74" y="96.52" size="2.54" layer="97" rot="MR180">DMA Interrupt</text>
+<text x="76.2" y="99.06" size="2.54" layer="97" rot="MR180">DMA Interrupt</text>
 <wire x1="163.83" y1="35.56" x2="262.89" y2="35.56" width="0" layer="94"/>
 <wire x1="262.89" y1="35.56" x2="262.89" y2="27.94" width="0" layer="94"/>
 <wire x1="262.89" y1="27.94" x2="262.89" y2="13.97" width="0" layer="94"/>
@@ -12256,7 +12255,7 @@ An interrupt is triggered for each request.</text>
 <wire x1="237.49" y1="13.97" x2="262.89" y2="13.97" width="0" layer="94"/>
 <wire x1="262.89" y1="8.89" x2="237.49" y2="8.89" width="0" layer="94"/>
 <text x="166.37" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
-<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="240.03" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="240.03" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="252.73" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
@@ -12266,25 +12265,21 @@ An interrupt is triggered for each request.</text>
 <wire x1="163.83" y1="27.94" x2="262.89" y2="27.94" width="0" layer="94"/>
 <text x="184.15" y="10.16" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="234.95" y="5.08" size="2.54" layer="94" font="vector" rot="MR0">&gt;LAST_DATE_TIME</text>
-<wire x1="76.2" y1="99.06" x2="76.2" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="76.2" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="187.96" y1="60.96" x2="187.96" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="187.96" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="73.66" y1="101.6" x2="73.66" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="73.66" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="187.96" y1="60.96" x2="187.96" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="187.96" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="U10" gate="B" x="147.32" y="76.2"/>
 <instance part="U18" gate="B" x="109.22" y="71.12"/>
-<instance part="P+11" gate="VCC" x="132.08" y="86.36" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="129.54" y="87.63" size="1.778" layer="96"/>
-</instance>
+<instance part="P+11" gate="VCC" x="132.08" y="86.36" smashed="yes" rot="MR0"/>
 <instance part="U9" gate="A" x="134.62" y="142.24"/>
-<instance part="P+16" gate="VCC" x="119.38" y="152.4" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="116.84" y="153.67" size="1.778" layer="96"/>
-</instance>
+<instance part="P+16" gate="VCC" x="119.38" y="152.4" smashed="yes" rot="MR0"/>
 <instance part="U4" gate="E" x="66.04" y="149.86"/>
 <instance part="U18" gate="A" x="93.98" y="144.78"/>
 <instance part="U9" gate="B" x="193.04" y="142.24"/>
-<instance part="GND7" gate="1" x="177.8" y="132.08" rot="MR0"/>
+<instance part="GND7" gate="1" x="177.8" y="132.08" smashed="yes" rot="MR0"/>
 <instance part="U4" gate="F" x="66.04" y="129.54"/>
 <instance part="U4" gate="B" x="88.9" y="129.54"/>
 </instances>
@@ -12364,13 +12359,6 @@ An interrupt is triggered for each request.</text>
 <label x="50.8" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U4" gate="F" pin="I"/>
 <wire x1="50.8" y1="129.54" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!IVP" class="0">
-<segment>
-<pinref part="U18" gate="B" pin="I0"/>
-<wire x1="96.52" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<label x="88.9" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -12456,6 +12444,13 @@ An interrupt is triggered for each request.</text>
 <wire x1="101.6" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="!CS1_READ" class="0">
+<segment>
+<pinref part="U18" gate="B" pin="I0"/>
+<wire x1="96.52" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<label x="88.9" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12482,7 +12477,7 @@ IO Comparator generates I/O Select signal.</text>
 <wire x1="237.49" y1="13.97" x2="262.89" y2="13.97" width="0" layer="94"/>
 <wire x1="262.89" y1="8.89" x2="237.49" y2="8.89" width="0" layer="94"/>
 <text x="166.37" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
-<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="240.03" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="240.03" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="252.73" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
@@ -12923,7 +12918,7 @@ IO Comparator generates I/O Select signal.</text>
 <wire x1="237.49" y1="13.97" x2="262.89" y2="13.97" width="0" layer="94"/>
 <wire x1="262.89" y1="8.89" x2="237.49" y2="8.89" width="0" layer="94"/>
 <text x="166.37" y="10.16" size="2.54" layer="94" font="vector">Project:</text>
-<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.1</text>
+<text x="166.37" y="5.08" size="2.54" layer="94" font="vector">V2.4</text>
 <text x="240.03" y="10.16" size="2.54" layer="94" font="vector">Chris Weir</text>
 <text x="240.03" y="5.08" size="2.54" layer="94" font="vector">Sheet:</text>
 <text x="252.73" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>

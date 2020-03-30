@@ -1,12 +1,12 @@
 "Qty";"Value";"Device";"Package";"Parts";"Description";"";
 "32";"0.1uF";"C-US025-024X044";"C025-024X044";"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32";"CAPACITOR, American symbol";"";
 "4";"10k";"R-US_0207/10";"0207/10";"R3, R4, R5, R6";"RESISTOR, American symbol";"";
+"1";"12MHz";"OSC-OE";"DIL08S";"Y1";"";"";
 "1";"22k";"R-US_0207/10";"0207/10";"R2";"RESISTOR, American symbol";"";
 "1";"270";"R-US_0207/10";"0207/10";"R1";"RESISTOR, American symbol";"";
 "1";"2N4403";"TRANSISTOR-PNP-2N4403";"TO92";"Q1";"";"";
 "1";"470";"R-US_0207/10";"0207/10";"R7";"RESISTOR, American symbol";"";
 "1";"470uF";"CPOL-US-10-5";"C-10-5";"C33";"";"";
-"1";"4MHz";"OSC-OE";"DIL08S";"Y1";"";"";
 "2";"7400";"74LS00N";"DIL14";"U3, U17";"Quad 2-input NAND gate";"";
 "2";"7404";"74LS04N";"DIL14";"U4, U19";"Hex INVERTER";"";
 "1";"7408";"74LS08N";"DIL14";"U18";"Quad 2-input AND gate";"";

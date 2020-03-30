@@ -1,6 +1,6 @@
 Netlist
 
-Exported from XMICRO-6502 V2.3.sch at 12/8/2019 8:15:32 PM
+Exported from XMICRO-6502 V2.4.sch at 3/29/2020 8:24:28 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -92,7 +92,8 @@ Net      Part     Pad      Pin        Sheet
          U11      11       CLK        2
          U2       13       Y2         5
 
-!CS1_READ U2       10       Y5         5
+!CS1_READ U18      4        I0         4
+         U2       10       Y5         5
          U21      1        G          3
          U21      19       G          3
 
@@ -107,7 +108,6 @@ Net      Part     Pad      Pin        Sheet
          U6       19       P=Q        5
 
 !IVP     U16      1        OC         3
-         U18      4        I0         4
          U22      9        Y6         3
 
 !MLB     U18      2        I1         4

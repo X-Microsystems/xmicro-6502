@@ -1,6 +1,6 @@
 Partlist
 
-Exported from XMICRO-6502 V2.3.sch at 12/8/2019 8:15:51 PM
+Exported from XMICRO-6502 V2.4.sch at 3/29/2020 8:24:40 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -87,4 +87,4 @@ U28      7432               74LS32N               DIL14        74xx-us  3
 U29      74257              74LS257N              DIL16        74xx-us  2
 U30      7474               74LS74N               DIL14        74xx-us  1
 U31      74LS14N            74LS14N               DIL14        74xx-us  1
-Y1       4MHz               OSC-OE                DIL08S       Custom   1
+Y1       12MHz              OSC-OE                DIL08S       Custom   1
